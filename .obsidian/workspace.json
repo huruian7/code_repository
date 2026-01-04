@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript修炼.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JavaScript修炼"
+              "title": "README"
             }
           }
         ]
@@ -183,8 +183,8 @@
   },
   "active": "c4e09d78d45b5c78",
   "lastOpenFiles": [
+    "JavaScript修炼.md",
     "Pasted image 20260104184104.png",
-    "README.md",
-    "JavaScript修炼.md"
+    "README.md"
   ]
 }

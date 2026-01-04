@@ -7,7 +7,7 @@
 ```
 git add .                               //把该目录下的所有文件都添加到箱子里
 git commit -m "新增了JavaScript修炼文件"  //-m是告诉git这次提交的注释，必须有，方便回溯
-git push origin main                    //origin是远程仓库代号，main是当前分支
+git push origin JavaScript              //origin是远程仓库代号，JavaScript是当前分支
 
 补充：
 git init   把普通的文件夹变为受git保护的文件夹
