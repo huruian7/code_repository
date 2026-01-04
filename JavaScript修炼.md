@@ -4,7 +4,7 @@
 - [x] obsidian连接github，实现本地和云端同步存储
 方法一：插件Git，可以自动提交同步
 方法二：在本地文件夹目录下输入cmd
-```
+```bash
 git add .                               //把该目录下的所有文件都添加到箱子里
 git commit -m "新增了JavaScript修炼文件"  //-m是告诉git这次提交的注释，必须有，方便回溯
 git push origin JavaScript              //origin是远程仓库代号，JavaScript是当前分支
@@ -26,10 +26,30 @@ git status 可以看当前的状态（发生了哪些变化）
 ## 1.2 基础语法
 ### 1.2.1变量
 1. var的定义
-   - var是一个什么数据类型都能装的变量（注意：var是老一代的声明方式，ES6标准更喜欢用le）
-- alert（），document.write（），consol.log()方法
-### 1.2.2数组
-1. JS里和传统编程语言数组的区别
-	- JS里的数组相当于大杂烩，什么数据类型，都可以装
-- 数组的使用，join，splice，push，pop
+	- var是一个什么数据类型都能装的变量。注意：var是老一代的声明方式，ES6标准更喜欢用let（变量），const（常量）
+	- var允许重复声明
+2. 三种输出
+	- alert（）  弹出警告框
+	- document.writr（）  把内容输出到网页上
+	- console.log（）  在控制台打印信息
+### 1.2.2 Array数组
+1. JS数组和传统数组的区别
+	- JS里的数组相当于大杂烩，长度可变，类型不限；传统数组固定大小，且只能装同一钟数据
+2. 常见方法
+```js
+	var arr = ["A", "B", "C"];
+
+// 1. push(): 往屁股后面塞
+arr.push("D");  // 结果：["A", "B", "C", "D"]
+
+// 2. pop(): 把屁股后面的拿出来
+arr.pop();      // 结果：["A", "B", "C"]
+
+// 3. splice(): 乾坤大挪移（最强法术）
+// 语法：splice(开始位置, 删几个, 插入啥)
+arr.splice(1, 1, "M"); // 从索引1开始，删1个(B)，换成"M" -> ["A", "M", "C"]
+
+// 4. join(): 合体
+var str = arr.join("-"); // 把数组连成字符串 -> "A-M-C"
+```
 
