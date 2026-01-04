@@ -67,6 +67,8 @@ console.log(escapee);  // 块外访问：正常
 // console.log(prisoner); // 块外访问：报错！ReferenceError
 // console.log(guard);    // 块外访问：报错！ReferenceError
 ```
+5.函数
+	- var a = function（）{……}，实际上是创建了一个函数对象，把这个对象的地址交给了a
 ### 1.2.2 Array数组
 1. JS数组和传统数组的区别
 	- JS里的数组相当于大杂烩，长度可变，类型不限；传统数组固定大小，且只能装同一钟数据
