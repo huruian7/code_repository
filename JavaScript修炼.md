@@ -36,7 +36,37 @@ git status 可以看当前的状态（发生了哪些变化）
 3. JavaScript特点
 	- 解释型
 4. 作用域（scope）
-	- 分为全局作用域和函数作用域
+	- 分为全局作用域和函数作用域和块级作用域
+	- if，for，while是块级作用域(块级作用域必函数作用域更节省cpu和内存资源)，
+```js
+		// 1. var 容易逃逸（不推荐）
+if (true) {
+    var secret = "我知道了"; 
+}
+console.log(secret); // 依然能打印出 "我知道了"，不安全
+
+// 2. let 完美锁定（推荐）
+if (true) {
+    let lockedSecret = "你看不见我";
+}
+// console.log(lockedSecret); // 这里会报错，变量被安全地锁在块里了
+
+---
+
+
+// 场景：在 if 块中使用变量
+if (true) {
+    var escapee = "我是 var，我逃出去了"; 
+    let prisoner = "我是 let，我被关住了";
+    const guard = "我是 const，我也被关住了";
+    
+    console.log(prisoner); // 块内访问：正常
+}
+
+console.log(escapee);  // 块外访问：正常
+// console.log(prisoner); // 块外访问：报错！ReferenceError
+// console.log(guard);    // 块外访问：报错！ReferenceError
+```
 ### 1.2.2 Array数组
 1. JS数组和传统数组的区别
 	- JS里的数组相当于大杂烩，长度可变，类型不限；传统数组固定大小，且只能装同一钟数据
