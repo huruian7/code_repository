@@ -27,7 +27,7 @@ Alist设置：
 2. Antigravity tool解决谷歌账号无资质问题
 
 # 第三章 Obsidian+Git本地云端同步存储
-官网下载obsidian和git
+## 3.1 官网下载obsidian和git
 方法一：插件Git，可以自动提交同步
 方法二：在本地文件夹目录下输入cmd
 ```bash
@@ -47,8 +47,9 @@ git status 可以看当前的状态（发生了哪些变化）
 3. **配置 Git**：
    - 开启代理：`git config --global http.proxy http://127.0.0.1:10810`
    - 关闭代理：`git config --global --unset http.proxy`
- --------------------------------------------------------------------------------- 
-obsidian快捷操作
+```
+
+## 3.2 obsidian快捷键
 1. ctrl家族
 	- ctrl+数字  切换标题
 	- ctrl+p     打开命令面板    
@@ -56,4 +57,7 @@ obsidian快捷操作
 	- ctrl+e     切换编辑/阅读模式
 2. 符号
 	- [[]]       输入双中括号可以链接另一份笔记
----
+
+## 3.3补充知识
+- 127.0.0.1代表本机，别名为localhost
+- 端口是什么意思
