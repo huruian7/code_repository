@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Github开源项目.md",
+                "file": "概率论速成.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Github开源项目"
+              "title": "概率论速成"
             }
           }
         ],
@@ -208,10 +208,11 @@
   },
   "active": "fed3cd990b4fa112",
   "lastOpenFiles": [
+    "Github开源项目.md",
+    "概率论速成.md",
     "图片/代理作用.png",
     "图片/var和let&&const.png",
     "图片/Pasted image 20260104225846.png",
-    "Github开源项目.md",
     "JavaScript修炼.md",
     "图片",
     "图片.md",
