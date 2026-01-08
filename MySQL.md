@@ -19,3 +19,6 @@ delete from student where id =1;                      (删除指定行)
 
 区分：truncate（ddL）和delete from（DML）
 truncate清空后主键自增也会清除，delete from 不会！
+
+# DQL
+where
