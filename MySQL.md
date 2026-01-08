@@ -16,3 +16,6 @@ delete from student where id =1;                      (删除指定行)
 1. DDL是alter table student,DML是update student ,因为DDL是修改表结构，所以多一个table修饰符
 2. 添加多个字段，DDL中的add/modify/change/drop都需要再写一个add,而update/insert不需要。比如insert into student  (s_name)  values ("hrx"),("dingdang");  --不需要写两个value
 	  比如update student set s_name ="hrx",s_age = 18 where id =1;  --不需要写两个set
+
+区分：truncate（ddL）和delete from（DML）
+truncate清空后主键自增也会清除，delete from 不会！
