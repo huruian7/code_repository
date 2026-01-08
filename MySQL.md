@@ -9,6 +9,8 @@
 
 ## DML
 update student set 字段1 = 值，字段2 = 值（ 修改满足条件的行）
+insert into student (s_name,s_age) values (),();   (插入多行值)
+delete from student where id =1;                      (删除指定行)
 
 联系记忆：
 1. DDL是alter table student,DML是update student ,因为DDL是修改表结构，所以多一个table修饰符
