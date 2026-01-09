@@ -29,5 +29,6 @@ truncate清空后主键自增也会清除，delete from 不会！
 5. and,or,not           逻辑组合,  比如select * from student where s_age<20 and score >80;
 
 ## 1.3.2 order by排序
-1. desc 降序，asc 升序
-2. limit n
+1. 多字段排序   order by s_age desc,score asc;
+2. 限制查询      order by score desc limit 2;(取成绩最高的两位)     
+             order by
