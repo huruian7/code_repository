@@ -86,7 +86,7 @@ on update restrict(默认)
 分为多表查询，子查询（都属于DQL语句，单独划为一章是因为这个知识点比较杂乱）
 ## 3.1 多表查询
 先找连接条件on，再选择拼法（inner join / left join / right join）
-### 3.1.1 inner join
+### 3.1.1 inner join(等同于join)
 ```mysql
 SELECT 
     s.s_name, c.class_name  -- 选出你想要的列
@@ -97,3 +97,4 @@ INNER JOIN
 ON 
     s.class_id = c.class_id; -- 连接条件：两个 ID 必须相等
 ```
+### 3.1.2 right join和left join
