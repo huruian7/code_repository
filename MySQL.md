@@ -37,7 +37,7 @@ truncate清空后主键自增也会清除，delete from 不会！
 1. 多字段排序   order by s_age desc,score asc;
 2. 限制查询       order by score desc limit 2;(取成绩最高的两位)     
              order by score desc limit 10,2(取成绩第十一和十二位)
-3. desc为降序，asc为升序（默认asc）
+3. desc为降序，asc为升序（默认asc），如果排序字段为字符串，则按a-z排序
 
 ## 1.3.3 聚合函数&&分组：
 1. count()  统计行数
