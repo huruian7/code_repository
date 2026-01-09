@@ -47,4 +47,7 @@ truncate清空后主键自增也会清除，delete from 不会！
 3. avg（）  取平均值
 4. max()  min()    取最大值，最小值
 
+注意：group by分组后，select查询只能查询分组的字段，否则没有实际意义会报错
+比如select class_id,count( * ) from student group by class_id;   (按谁分组查询谁)
 
+having则是过滤分组后的数据
