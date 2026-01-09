@@ -67,10 +67,11 @@ create table if not exists student(
 2. alter table add引入外键
 ```mysql
 alter table student
+add class_id int,    --
 add constraint fk_student_class
 foreign key(class_id) references class(class_id);
 
---级联选项
+--级联选项（负责的是外键字段，即id,其他字段可以任意修改）
 on delete set null --班级删除，学生表置空
 on delete cascade  --班级删除，学生表跟着自动删除
 on delete restrict --只要班级里还有学生，就不准删除该班级（默认）
@@ -78,5 +79,6 @@ on delete restrict --只要班级里还有学生，就不准删除该班级（�
 --update同理
 on update set null
 on update set cascade
-on update restrict
+on update restrict(默认)
 ```
+	
