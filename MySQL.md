@@ -31,7 +31,8 @@ truncate清空后主键自增也会清除，delete from 不会！
 2. %，_                   模糊查询，比如select * from student where s_id like "2%";(记住要加“”)
 3. in,between and  范围查询,   比如select * from student where s_id in (1,2,3);(记住in要加小括号)
 4. is null,is not null 判断为空，比如select * from student where s_id is not null;
-5. and,or,not           逻辑组合,  比如select * from student where s_age<20 and score >80;
+5. and,or,not,xor    逻辑组合,  比如select * from student where s_age<20 and score >80;
+xor  异或（互斥筛选），可以运用于礼券发放场景，假设一个电商活动，规定“新注册用户”或“消费满 1000 元的用户”可以领券，但“既是新用户又消费满 1000 元”的人不能重复领
 
 ## 1.3.2 order by排序：
 1. 多字段排序   order by s_age desc,score asc;
