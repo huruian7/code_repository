@@ -40,6 +40,11 @@ truncate清空后主键自增也会清除，delete from 不会！
 3. desc为降序，asc为升序（默认asc）
 
 ## 1.3.3 聚合函数：
-1. count  统计行数
-   select count( * ) from student ;    统计所有行
-   select count
+1. count()  统计行数
+   select count( * ) from student ;    统计所有行，含null
+   select count(s_name) from student;     统计s_name不为空的行
+2. sum()   求和
+3. avg（）  取平均值
+4. max()  min()    取最大值，最小值
+
+
