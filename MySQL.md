@@ -67,8 +67,8 @@ create table if not exists student(
 2. alter table add引入外键
 ```mysql
 alter table student
-add class_id int,    --
-add constraint fk_student_class
+add class_id int,                    --增加字段
+add constraint fk_student_class      --增加约束
 foreign key(class_id) references class(class_id);
 
 --级联选项（负责的是外键字段，即id,其他字段可以任意修改）
@@ -81,4 +81,6 @@ on update set null
 on update set cascade
 on update restrict(默认)
 ```
-	
+
+# 第三章 查询
+分为多表查询，子查询（都属于DQL语句，单独划为一章是因为这个知识点比较杂乱）
