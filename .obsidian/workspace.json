@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "Python"
             }
-          },
-          {
-            "id": "b6f2377a3685ed01",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.11.4"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -204,7 +191,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b6f2377a3685ed01",
+  "active": "3ae1cdbcc6488b10",
   "lastOpenFiles": [
     "Python.md",
     "数字逻辑.md",
