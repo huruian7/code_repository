@@ -32,5 +32,10 @@ print("English","Chinese","Mysql",sep="|",end="\n")
 ## 2.4 格式符号
 最常用的是%，但已经逐渐被f-string取代
 ```python
-age = int(input())
+#常用格式化符号
+%d
+%s
+%f
 ```
+
+input如何多个赋值
