@@ -50,7 +50,18 @@ print("age=%d,name=%s" % (age, name))  #注意中间没有逗号
 ```
 ```python
 #f-string格式
+前缀f
+占位符{}
+控制显示效果:
 
+#.nf表示保留n位小数且四舍五入
+pi = 3.1415926
+print(f"保留两位：{pi:.2f}")  # 输出: 3.14
+print(f"保留四位：{pi:.4f}")  # 输出: 3.1416
+#.n%百分比显示且四舍五入
+progress = 0.7569  
+print(f"进度：{progress:%}")    # 默认保留 6 位小数: 75.600000%  
+print(f"进度：{progress:.1%}")  # 指定精度: 75.7%
 ```
 
 input如何多个赋值
