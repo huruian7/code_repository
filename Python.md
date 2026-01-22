@@ -99,3 +99,10 @@ while bet_number < 0 or  bet_number > account:
     bet_number = int(input("请重新下注:"))  
 print("请开始游戏")
 ```
+
+## 2.9 列表容器[]
+```python
+#有两种列表，一种是字面量[]，另一种是构造器list
+numbers = [1,2,3,4,5,6]
+number
+```
