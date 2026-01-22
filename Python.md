@@ -101,8 +101,23 @@ print("请开始游戏")
 ```
 
 ## 2.9 列表容器[]
+### 2.9.1 列表构造
 ```python
 #有两种列表，一种是字面量[]，另一种是构造器list
 numbers = [1,2,3,4,5,6]
-number
+numbers1 = list(range(1,7))
+
+#注意：与java/c不同，数组遍历不需要用for循环，可以直接print
+```
+
+### 2.9.2 成员运算
+```python
+numbers = list(range(1,7))  
+#in
+print(1 in numbers)  #输出True
+#索引
+print(numbeers[0])   #输出1
+print(numbeers[-6])  #输出1，索引为负号，最小的索引就是列表中的第一个元素
+#切片运算
+print(numbers[0:2])  #输出[1,2]，列表中输出的数字个数为end-start
 ```
