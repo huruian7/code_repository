@@ -16,8 +16,21 @@ Python语法：
 - 文档注释""" """
 - 单行注释#
 ## 2.2 输入函数input
+```python
+age = input("请输入您的年龄")
+print(type(age))   #输出为str
+age = int(input("请输入您的年龄"))
+print(type(age))   #输出为int
+```
 
 ## 2.3 输出函数print
 ```python
-print("English","Chinese","Mysql",sep="")
+print("English","Chinese","Mysql",sep="|",end="\n")
+# sep是分隔符；end是结束符，默认为换行符
+```
+
+## 2.4 格式符号
+最常用的是%，但已经逐渐被f-string取代
+```python
+age = int(input())
 ```
