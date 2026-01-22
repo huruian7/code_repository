@@ -72,3 +72,12 @@ print(f"进度：{progress:.1%}")  # 指定精度: 75.7%
 and or not 与或非
 True False 区分大小写
 ```
+
+## 2.6 if-else分支
+```python
+age = int(input("请输入您的年龄"))
+if age>18:
+	print("您已成年")
+else:
+	print("您不能上网")
+```
