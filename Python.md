@@ -93,8 +93,9 @@ for i in range(0,10):
 
 ## 2.8 while循环(未知循环次数)
 ```python
-account = 1000 #账户金额
-bet_number = 0 #下注金额
-while account < 0 or  bet_number > account:
-	
+account = 1000 #账户金额  
+bet_number = int(input(f"(您的账户余额为{account})\n请输入您的下注金额:\n")) #下注金额  
+while bet_number < 0 or  bet_number > account:  
+    bet_number = int(input("请重新下注:"))  
+print("请开始游戏")
 ```
