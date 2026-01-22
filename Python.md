@@ -64,3 +64,11 @@ print(f"进度：{progress:%}")    # 默认保留 6 位小数: 75.600000%
 print(f"进度：{progress:.1%}")  # 指定精度: 75.7%
 ```
 
+## 2.5  运算符
+```python
+** 幂运算
+/  除法
+// 整除
+and or not 与或非
+True False 区分大小写
+```
