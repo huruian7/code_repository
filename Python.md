@@ -20,10 +20,14 @@
 ## 2.2 输入函数input
 ```python
 #split()默认以空格作为分隔符，将用户输入的一整行字符串拆分成一个列表
-name,age = input("请输入您的年龄和姓名").split()
+name,age = input("请输入您的年龄和姓名").split()  #等价.split(" ")
 
 #input默认接受的全部都是字符，map()可以强制转换
-age，height = map(int,input("请输入您的年龄和身高")).split()
+age，height = map(int,input("请输入您的年龄和身高").split())
+
+#如需单独转换，可以另起一行强制转换
+age，height = map(int,input("请输入您的年龄和身高").split())
+age = str(age)
 ```
 
 ## 2.3 输出函数print
@@ -46,6 +50,7 @@ print("age=%d,name=%s" % (age, name))  #注意中间没有逗号
 ```
 ```python
 #f-string格式
+
 ```
 
 input如何多个赋值
