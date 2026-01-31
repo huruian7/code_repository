@@ -147,6 +147,8 @@ fruits.pop(2)
 fruits.remove("banana")
 # clear,清空元素
 fruits.clear()
-# index,查找指定元素的索引
+
+# index(元素，start,end) 查找指定范围元素的索引
+# count()
 
 ```
