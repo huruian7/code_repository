@@ -137,7 +137,14 @@ for number in numbers:
 ```python
 fruits = ["apple","banana","watermelon","grape"]
 # append,在尾部删除元素
+fruits.append
 # insert,在指定索引插入元素
+fruits.insert(1,"orange")
 # pop,通过索引删除元素，默认删除尾部元素
+fruits.pop()
+fruits.pop(2)
 # remove，指定元素进行删除
+fruits.remove("banana")
+# clear,清空元素
+fruits.clear()
 ```
