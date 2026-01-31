@@ -132,3 +132,12 @@ numbers = [0]*6
 for number in numbers:
 	print(number)
 ```
+
+### 2.9.3 列表操作
+```python
+fruits = ["apple","banana","watermelon","grape"]
+# append,在尾部删除元素
+# insert,在指定索引插入元素
+# pop,通过索引删除元素，默认删除尾部元素
+# remove，指定元素进行删除
+```
