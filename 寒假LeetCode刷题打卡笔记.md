@@ -42,7 +42,25 @@ Ps:Set,Map均为接口，ta的实现类HashSet,HashMap均无序
 Map<key,value> 哈希表名 = new HashMap<>();//向上转型的写法
 //其中，key具有唯一性；不可更改性；且如果value为自己构造的对象，必须重写hashCode(),equal()方法
 ```
+
 ```java
 成员方法：
-1，put() 
+Map<String,String> studentID = new HashMap<>();
+1.put() 向表中添加元素
+studentId.put("6020221970","hrx");
+2.get() 通过key找到value并返回
+String value = studentID.get(6020221970"");
+3.size() 返回表的大小
+4.keySet() 返回Map中所有的Key,返回形式是Set
+Set<String> keySet = studentID.keySet();
+```
+
+```java
+遍历：
+通过get方法和keySet方法以及增强for循环（也叫for-each）实现遍历
+假设现在已经拥有了一个HashMap，名字为studentID，则遍历代码如下：
+Set<String> keySet = studentID.keySet();
+for(String key : keySet){
+	
+}
 ```
