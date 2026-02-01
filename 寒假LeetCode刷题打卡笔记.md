@@ -61,6 +61,6 @@ Set<String> keySet = studentID.keySet();
 假设现在已经拥有了一个HashMap，名字为studentID，则遍历代码如下：
 Set<String> keySet = studentID.keySet();
 for(String key : keySet){
-	
+	System.out.println("key:"+key+"\t"+"value:"+studentID.get(key));
 }
 ```
