@@ -27,7 +27,22 @@ class Solution{
 同11/31题两数之和，暴力求解在数据繁杂的情况下时间复杂度太高，引入哈希表寻求更优解
 
 ### HashMap知识点：
+1. HashMap,使用泛型，必须要用包装类（Integer,String等），因为泛型的类型擦除要求必须是Object对象
 ```java
+Set                                                   Map
+仅存储单个对象                                          存储键值对
+不允许元素重复                                          key不允许重复，value允许
 
+Ps:Set,Map均为接口，ta的实现类HashSet,HashMap均无序
 ```
 
+2. HashMap具体使用
+```java
+构造器：
+Map<key,value> 哈希表名 = new HashMap<>();//向上转型的写法
+//其中，key具有唯一性；不可更改性；且如果value为自己构造的对象，必须重写hashCode(),equal()方法
+```
+```java
+成员方法：
+1，put() 
+```
