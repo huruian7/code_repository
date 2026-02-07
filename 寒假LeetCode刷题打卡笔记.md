@@ -154,3 +154,5 @@ def see_demo2():
 ### 1.5 import和from import
 ![[Pasted image 20260207145556.png]]
 
+# 2/8
+## 一，异常（python）
