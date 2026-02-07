@@ -127,7 +127,7 @@ def choices_demo():
 ```
 
 sample(seq, k)                                           无返回抽样，返回的k个列表元素无重复
-shuffle
+shuffle(seq)                                               打乱顺序
 
 
 
