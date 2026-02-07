@@ -113,8 +113,10 @@ random()                       返回[0.0,1.0)之间的随机浮点数
 uniform(a,b)                  返回[a,b]之间的随机浮点数
 
 ### 1,3 随机选择序列中的一个元素
-choice(seq)
-choices(seq,k=?)
+choice(seq)                  等概率返回一个元素
+choices(seq,k=?)          通过k参数返回多个元素，可通过weight参数控制权重
+sample
+shuffle
 
 
 
