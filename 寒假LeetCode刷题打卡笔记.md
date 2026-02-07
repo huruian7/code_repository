@@ -129,6 +129,17 @@ def choices_demo():
 sample(seq, k)                                           无返回抽样，返回的k个列表元素无重复
 shuffle(seq)                                               打乱顺序
 
+### 1.4 随机种子
+种子是输入给算法的初始数字，只要初始种子相同，在同一算法下，得到的结果也相同。只要在调用random模块函数前设置seed值，那么后续随机的结果就会被固定，所以也叫伪随机
+random.seed(10)
+```python
+def seed_demo():
+	random.seed(10)
+	for i in range(100):
+		print(random.randint(1,7))
+		time.sleep(0.5)
+```
+
 
 
 
