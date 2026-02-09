@@ -191,15 +191,23 @@ PS：在浏览器控制台，doucument.getElementByID()可以在控制台定位�
 
 ```python
 # 八种定位方式
-#1,By.ID
-find_element(By.ID,"")
-#2,By.NAME
-#3,By.CLASS_NAME
-#4,By.TAG_NAME
-#5,By.LINK_TEXT
-#6,By.PARTIAL_LINK_TEXT
-#7,By.XPATH
-#8,By.CSS_SELECTOR
+1,By.ID
+2,By.NAME
+3,By.CLASS_NAME
+4,By.TAG_NAME    标签名
+5,By.LINK_TEXT   文本链接
+6,By.PARTIAL_LINK_TEXT  模糊文本链接   
+7,By.XPATH        路径（浏览器右击复制）
+8,By.CSS_SELECTOR
+
+# CSS_SELECTOR定位
+find_element(By.CSS_ELEMENT,"#id")        定位id
+find_element(By.CSS_ELEMENT,".class")     定位class
+find_element(By.CSS_ELEMENT,"不加修饰符")   定位标签名
+find_element(By.CSS_ELEMENT,"[xxx = "" ]")  定位任意属性类型
+# 其中*=为模糊匹配，^=为开头值,$=为结束值
+
+最通用的定位方式，浏览器控制台右击复制，浏览器会给一个唯一的定位值
 ```
 ### 1.2.3  元素交互
 1. send_key()   元素输入
