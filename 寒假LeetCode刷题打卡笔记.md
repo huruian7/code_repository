@@ -223,3 +223,22 @@ from selenium import webdriver
 from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options
 from.selenium.webdriver.common.by import By
+
+## 二，补充知识点
+### 2.1 with
+上下文管理器，自动清理，不用手动关闭
+### 2.1 json模块
+1. json.dump()
+ dump为倾倒，将内存中的cookies保存到文件中
+```python
+# w为写，r为读
+with open(path,"w"，encoding="utf-8") as f:
+	# 把cookies输出到保存的path路径中(f)
+	dump(cookies,f)
+```
+2. json.load()
+### 2.3 其他函数
+driver.get_cookies()   获取cookies
+driver.delete_all_cookies() 
+driver.add_cookie()
+
