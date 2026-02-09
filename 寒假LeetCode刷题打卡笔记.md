@@ -214,6 +214,11 @@ find_element(By.CSS_ELEMENT,"[xxx = "" ]")  定位任意属性类型
 2. clink()   元素点击
 3. clear()   元素清空
 
+### 1.2.4 隐式等待
+driver.implicitly_wait(10)
+全局设置，等待元素加载，超时则抛出异常
+
+### 1.2.5 导包
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options
