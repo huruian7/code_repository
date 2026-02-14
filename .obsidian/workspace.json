@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Github开源项目.md",
+                "file": "寒假打卡笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Github开源项目"
+              "title": "寒假打卡笔记"
             }
           }
         ]
@@ -193,6 +193,7 @@
   },
   "active": "3ae1cdbcc6488b10",
   "lastOpenFiles": [
+    "Github开源项目.md",
     "图片/P(X)公式.png",
     "图片/key属性.png",
     "寒假打卡笔记.md",
@@ -203,7 +204,6 @@
     "JavaScript修炼.md",
     "MySQL.md",
     "概率论速成.md",
-    "Github开源项目.md",
     "图片/var和let&&const.png",
     "图片/length.png",
     "图片/left jon 和right join.png",
